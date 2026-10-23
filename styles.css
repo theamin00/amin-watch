@@ -115,3 +115,140 @@ border: 1px solid #c6a96b;
     font-style: bold;
 
 }
+
+
+/* تنظیم اندازه تمام عناصر */
+* {
+    box-sizing: border-box;
+}
+
+/* تصاویر بنر و محصولات */
+.watch-banner {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.watch-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.menu-list .menu-item .menu-img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* چیدمان کارت‌های محصولات */
+.menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px 20px;
+}
+
+.menu-list .menu-item {
+    flex: 0 1 calc(33.333% - 20px);
+    min-width: 0;
+    width: auto;
+    padding: 15px;
+    overflow-wrap: anywhere;
+}
+
+/* جلوگیری از بیرون‌زدگی متن‌ها */
+.menu-list .menu-item p {
+    max-width: 100%;
+    line-height: 1.9;
+}
+
+/* تنظیمات موبایل */
+@media (max-width: 600px) {
+
+    #header {
+        flex-direction: column;
+        gap: 20px;
+        margin: 12px;
+        padding: 20px 12px;
+        border-radius: 25px;
+    }
+
+    #header .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #header .navbar a {
+        font-size: 14px;
+    }
+
+    .h3 {
+        font-size: 20px;
+        line-height: 1.8;
+        padding: 0 12px;
+    }
+
+    .h1 {
+        font-size: 25px;
+    }
+
+    .watch-banner {
+        width: 92%;
+    }
+
+    .menu-list {
+        margin: 25px 12px;
+        gap: 20px;
+    }
+
+    .menu-list .menu-item {
+        flex: 0 1 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .menu-list .menu-item .menu-img {
+        width: 100%;
+        max-width: 300px;
+        height: 220px;
+    }
+
+    .menu-list .menu-item h3,
+    .menu-list .menu-item h4,
+    .menu-list .menu-item h5,
+    .menu-list .menu-item h6 {
+        line-height: 1.8;
+        overflow-wrap: anywhere;
+    }
+
+    .menu-list .menu-item p {
+        font-size: 16px !important;
+        line-height: 2;
+    }
+
+}
+
+/* تبلت */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    #header .navbar {
+        gap: 25px;
+    }
+
+    .menu-list .menu-item {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .menu-list .menu-item .menu-img {
+        max-width: 100%;
+    }
+
+}
+
