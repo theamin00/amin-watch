@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    direction: rtl;
+}
+
+body{
+    background: black;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-style: italic;
+}
+#header{
+ background:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    margin: 20px;
+    padding: 10px 20px;
+}
+#header .logo{
+    line-height: 0;
+    width: 60px;
+}
+#header .navbar{
+    display:flex;
+    gap: 250px;
+    text-align: center;
+}
+#header .header-contact{
+    background: #c6a96b;
+    color: #171717;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+.nav1 .nav2 .nav3{
+    padding-left: 30px;
+    margin-left: 30px;
+    text-align: center;
+}
+/* body/main style */
+.watch-banner{
+    width: 60%;
+    margin: 30px auto;
+}
+.watch-banner img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.h1{
+    color: #c6a96b;
+    text-align: center;
+    font-style: italic;
+}
+.h2{
+    color: #f5f1e8;
+    text-align: center;
+    font-style: italic;
+}
+.h3 {
+    text-align: center;
+    color: #c6a96b;
+    font-size: x-large;
+}
+/* products list style */
+.menu-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 80px 40px;
+}
+.menu-list .menu-item{
+    background: #252525;
+border-radius: 18px;
+width: 28.5%;
+color: #e0e0ee;
+padding: 15px;
+border: 1px solid #c6a96b;
+}
+.menu-list .menu-item .menu-img{
+ width: 350px; 
+ height: 350px;
+ object-fit: contain;
+ margin: 0 auto;  
+ display: block;
+}
+.menu-list .menu-item .menu-info{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-list .menu-item .menu-info .order{
+    background: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}ّ
+.p-text{
+    border: 2px solid #c6a96b;
+    font-size: x-large;
+    font-style: bold;
+    
+
+}
