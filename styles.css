@@ -116,7 +116,6 @@ border: 1px solid #c6a96b;
 
 }
 
-
 /* تنظیم اندازه تمام عناصر */
 * {
     box-sizing: border-box;
@@ -249,6 +248,345 @@ border: 1px solid #c6a96b;
     .menu-list .menu-item .menu-img {
         max-width: 100%;
     }
-
 }
 
+/* =========================
+   FOOTER - AMIN WATCH
+========================= */
+
+.footer {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 35px 25px 20px;
+    background-color: #252525;
+    color: #f5f1e8;
+    border-top: 2px solid #c6a96b;
+    direction: rtl;
+    font-family: inherit;
+}
+
+.footer *,
+.footer *::before,
+.footer *::after {
+    box-sizing: border-box;
+}
+
+/* چیدمان چهار بخش فوتر */
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* تنظیم عمومی ستون‌ها */
+
+.footer-box {
+    flex: 1 1 0;
+    min-width: 0;
+    direction: rtl;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+/* عنوان بخش‌ها */
+
+.footer-box h3 {
+    margin: 0 0 18px;
+    color: #c6a96b;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.8;
+}
+
+/* لوگو و نام برند */
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-brand img {
+    display: block;
+    width: 70px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer-brand h3 {
+    margin: 0;
+}
+
+/* شبکه‌های اجتماعی */
+
+.footer .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.footer .social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 42px;
+    width: 42px;
+    height: 42px;
+    border: 1.5px solid #c6a96b;
+    border-radius: 50%;
+    color: #c6a96b;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.footer .social-icons a:hover {
+    background-color: #c6a96b;
+    color: #252525;
+}
+
+/* خبرنامه */
+
+.footer-email p {
+    margin: 0 0 12px;
+    color: #f5f1e8;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.footer-email form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-email form label {
+    flex: 0 0 100%;
+    font-size: 14px;
+}
+
+.footer-email input[type="email"] {
+    flex: 1 1 140px;
+    width: 100%;
+    min-width: 0;
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 1px solid #777;
+    border-radius: 6px;
+    outline: none;
+    background-color: #fff;
+    color: #252525;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.footer-email input[type="email"]::placeholder {
+    color: #777;
+}
+
+.footer-email input[type="email"]:focus {
+    border-color: #c6a96b;
+    box-shadow: 0 0 0 2px rgb(198 169 107 / 20%);
+}
+
+.footer-email button[type="submit"] {
+    flex: 0 0 auto;
+    min-height: 44px;
+    padding: 10px 18px;
+    border: 1px solid #c6a96b;
+    border-radius: 7px;
+    background-color: #c6a96b;
+    color: #252525;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.footer-email button[type="submit"]:hover {
+    background-color: transparent;
+    color: #c6a96b;
+}
+
+/* دسترسی سریع */
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-links h3 {
+    align-self: flex-start;
+}
+
+.footer-links a {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #f5f1e8;
+    font-size: 16px;
+    line-height: 1.8;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.footer-links a:hover {
+    color: #c6a96b;
+}
+
+/* درباره سایت */
+
+.footer-about p {
+    margin: 0 0 10px;
+    color: #f5f1e8;
+    font-size: 15px;
+    font-size: medium;
+    line-height: 2;
+    text-align: right;
+}
+
+/* بخش پایینی فوتر */
+
+.footer .footer-bottom {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding-top: 18px;
+    border-top: 1px solid #484848;
+    text-align: center;
+    color: #c9c4ba;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* دکمه بازگشت به بالای صفحه */
+
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #c6a96b;
+    border-radius: 50%;
+    background-color: #252525;
+    color: #c6a96b;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.back-to-top:hover {
+    background-color: #c6a96b;
+    color: #252525;
+}
+
+/* تبلت و صفحه‌های متوسط */
+
+@media (max-width: 900px) {
+    .footer {
+        padding: 30px 20px 18px;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 30px 24px;
+    }
+
+    .footer-box {
+        flex: 1 1 calc(50% - 24px);
+    }
+}
+
+/* موبایل */
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 25px 16px 18px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 28px;
+    }
+
+    .footer-box {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .footer-box h3 {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+
+    .footer-brand {
+        align-items: flex-start;
+    }
+
+    .footer-brand img {
+        width: 65px;
+    }
+
+    .footer .social-icons {
+        gap: 10px;
+    }
+
+    .footer-email form {
+        gap: 8px;
+    }
+
+    .footer-email input[type="email"] {
+        flex-basis: 150px;
+    }
+
+    .footer .footer-bottom {
+        margin-top: 25px;
+        padding-top: 15px;
+    }
+
+    .footer .footer-bottom p {
+        font-size: 12px;
+    }
+
+    .back-to-top {
+        right: 12px;
+        bottom: 12px;
+        width: 42px;
+        height: 42px;
+    }
+}
+
+/* کاهش انیمیشن برای کاربران نیازمند حرکت کمتر */
+
+@media (prefers-reduced-motion: reduce) {
+    .footer *,
+    .footer *::before,
+    .footer *::after,
+    .back-to-top {
+        transition: none;
+        scroll-behavior: auto;
+    }
+}
